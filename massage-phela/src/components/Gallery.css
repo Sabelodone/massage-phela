@@ -1,0 +1,17 @@
+/* src/components/Gallery.css */
+#gallery {
+    background-color: #f8f9fa;
+  }
+  
+  #gallery .card {
+    border: none;
+  }
+  
+  #gallery .card img {
+    transition: transform 0.2s;
+  }
+  
+  #gallery .card img:hover {
+    transform: scale(1.05);
+  }
+  
