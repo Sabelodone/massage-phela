@@ -30,8 +30,10 @@
   font-family: 'Playfair Display', serif; /* Elegant font */
   color: #af4261; /* Gradient text color */
   background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
+  background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text; /* Standard property */
 }
 
 .navbar-nav .nav-link {

@@ -38,6 +38,8 @@
   background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text; /* Standard property */
+  
 }
 
 .custom-jumbotron p {
@@ -78,3 +80,4 @@
     font-size: 1.2rem;
   }
 }
+

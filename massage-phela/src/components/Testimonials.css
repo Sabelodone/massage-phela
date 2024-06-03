@@ -1,0 +1,37 @@
+.testimonials {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  /* ... (rest of your CSS) */
+  
+  .testimonials-heading {
+    text-align: center; /* Center the text */
+    margin-bottom: 30px; /* Add margin for spacing */
+  }
+  
+  .testimonial-list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .testimonial-item {
+    min-width: 100%;
+    flex: 0 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .testimonial-item.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  

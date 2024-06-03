@@ -6,6 +6,7 @@ import About from './components/About';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
+import Testimonials from './components/Testimonials';
 import './App.css';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <About />
         <Services />
         <Gallery />
+        <Testimonials />
       </main>
       <Footer />
       <BookingModal />
