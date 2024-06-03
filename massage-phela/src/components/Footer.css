@@ -1,67 +1,45 @@
-/* Footer styles */
-footer {
-  background-color: whitesmoke;
-  padding: 2rem;
-  text-align: center;
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
 }
 
-/* Divider line styles */
-.divider-line {
-  border-top: 1px dashed #ccc;
-  margin-bottom: 1rem;
+.footer h5 {
+  margin-bottom: 20px;
 }
 
-/* Footer content styles */
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.footer ul {
+  padding: 0;
+  list-style: none;
 }
 
-/* Contact info styles */
-.contact-info {
-  flex: 1 1 300px;
-  text-align: left;
-  margin-bottom: 1rem;
+.footer ul li {
+  margin-bottom: 10px;
 }
 
-/* Social media styles */
-.social-media {
-  flex: 1 1 200px;
-  text-align: right;
+.footer ul li a {
+  color: #ddd;
+  text-decoration: none;
 }
 
-/* Social icons styles */
-.social-icons {
-  display: inline-flex;
+.footer ul li a:hover {
+  color: #007bff;
 }
 
-.social-icons .icon {
-  font-size: 1.5rem;
-  margin-left: 1rem;
+.footer .form-control {
+  border-radius: 0;
 }
 
-/* Highlighted text styles */
-.highlighted-text {
-  color: #e0354b;
+.footer .btn {
+  background-color: #073e79;
+  border-color: #007bff;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .footer-content {
-      flex-direction: column;
-      align-items: center;
-  }
+.footer .btn:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
 
-  .contact-info,
-  .social-media {
-      flex: none;
-      width: auto;
-      text-align: center;
-      margin-bottom: 1rem;
-  }
-
-  .social-media {
-      margin-top: 1rem;
-  }
+.footer .fab {
+  margin-right: 10px;
 }

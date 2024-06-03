@@ -8,7 +8,6 @@ const images = [
   { src: '/image2.jpg', alt: 'Image 2', link: '#image2' },
   { src: '/image4.jpg', alt: 'Image 4', link: '#image4' },
   { src: '/image5.jpg', alt: 'Image 5', link: '#image5' },
-  { src: '/public/background-image.jpg', alt: 'background image', link: '#background-image' }
 ];
 
 const Gallery = () => {

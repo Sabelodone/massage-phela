@@ -1,39 +1,65 @@
 import React from 'react';
-import './Footer.css'; // Import the CSS file for the footer
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'; // Import social media icons from react-icons library
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faInstagram, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import './Footer.css';
 
-function Footer() {
-    return (
-        <footer>
-            {/* Dotted line */}
-            <div className="divider-line"></div>
-            {/* Footer content goes here */}
-            <div className="footer-content">
-                <div className="contact-info">
-                    <h4>Contact Us</h4>
-                    <p>North Hills Lifestyle Estate, Germiston, South Africa</p>
-                    <p>Phone: +72 76 412 376</p>
-                    <p>Email: info@massagephela.com</p>
-                </div>
-                <div className="social-media">
-                    <h4>Follow <span className="highlighted-text">Us</span></h4>
-                    <div className="social-icons">
-                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                            <FaFacebook className="icon" />
-                        </a>
-                        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                            <FaTwitter className="icon" />
-                        </a>
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                            <FaInstagram className="icon" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <p>© 2024 My Searchify. All rights reserved.</p>
-        </footer>
-    );
-}
+const Footer = () => {
+  return (
+    <footer className="footer mt-auto py-3 bg-dark text-white">
+      <div className="container">
+        <div className="row">
+          {/* Contact Information */}
+          <div className="col-md-3 col-sm-6">
+            <h5>Contact Us</h5>
+            <ul className="list-unstyled">
+              <li><FontAwesomeIcon icon={faMapMarkerAlt} /> 123 Wellness St, Health City</li>
+              <li><FontAwesomeIcon icon={faPhone} /> (123) 456-7890</li>
+              <li><FontAwesomeIcon icon={faEnvelope} /> info@massagephela.com</li>
+            </ul>
+          </div>
+          {/* Quick Links */}
+          <div className="col-md-3 col-sm-6">
+            <h5>Quick Links</h5>
+            <ul className="list-unstyled">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#book">Book</a></li>
+            </ul>
+          </div>
+          {/* Social Media Links */}
+          <div className="col-md-3 col-sm-6">
+            <h5>Follow Us</h5>
+            <ul className="list-unstyled">
+              <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookF} /> Facebook</a></li>
+              <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /> Instagram</a></li>
+              <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} /> Twitter</a></li>
+              <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /> LinkedIn</a></li>
+            </ul>
+          </div>
+          {/* Newsletter Subscription */}
+          <div className="col-md-3 col-sm-6">
+            <h5>Newsletter</h5>
+            <form>
+              <div className="form-group">
+                <input type="email" className="form-control" placeholder="Enter your email" />
+              </div>
+              <button type="submit" className="btn btn-primary mt-2">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div className="row mt-3">
+          <div className="col text-center">
+            <p>&copy; 2024 Massage Phela. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;
+
 

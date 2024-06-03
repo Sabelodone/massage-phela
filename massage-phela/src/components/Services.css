@@ -1,6 +1,37 @@
-/* src/components/Services.css */
+/* General Styles */
 #services {
-    background-color: #f8f9fa;
-    padding: 60px 0;
-  }
-  
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  font-family: 'Playfair Display', serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #af4261; /* Luxurious color */
+  font-weight: bold;
+}
+
+.service-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+  color: #af4261; /* Luxurious color */
+}
+
+.service-card .card-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.service-card .card-text {
+  color: #666;
+}
